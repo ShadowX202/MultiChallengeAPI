@@ -17,6 +17,7 @@ public interface ChallengeData {
     List<OfflinePlayer> getPlayers();
     void addPlayer(Player player);
     void removePlayer(Player player);
+    boolean hasPlayer(OfflinePlayer player);
 
     void pause();
     void resume();

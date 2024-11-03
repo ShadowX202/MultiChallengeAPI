@@ -15,10 +15,8 @@ public interface ChallengeManager {
     boolean isRegistered(Challenge challenge);
     boolean isRegistered(Class<Challenge> challenge);
 
-    ChallengeData startChallenge(Class<Challenge> challenge, List<Player> players);
-    ChallengeData stopChallenge(ChallengeData challengeData);
-    ChallengeData pauseChallenge(ChallengeData challengeData);
-    ChallengeData resumeChallenge(ChallengeData challengeData);
+    ChallengeData openChallenge(Class<Challenge> challenge, List<Player> players);
+    ChallengeData closeChallenge(ChallengeData challengeData);
 
     List<ChallengeData> getActiveChallenges(Challenge challenge);
     ChallengeData getActiveChallenge(Player player);
