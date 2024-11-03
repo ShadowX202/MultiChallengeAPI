@@ -7,12 +7,15 @@ import org.bukkit.entity.Player;
 import java.util.List;
 
 public interface ChallengeManager {
-    List<Challenge> getChallenges();
+    List<Class<Challenge>> getChallenges();
     List<ChallengeData> getActiveChallenges();
 
-    boolean registerChallenge(Challenge challenge);
+    boolean registerChallenge(Class<Challenge> challenge);
 
-    ChallengeData startChallenge(Challenge challenge, List<Player> players);
+    boolean isRegistered(Challenge challenge);
+    boolean isRegistered(Class<Challenge> challenge);
+
+    ChallengeData startChallenge(Class<Challenge> challenge, List<Player> players);
     ChallengeData stopChallenge(ChallengeData challengeData);
     ChallengeData pauseChallenge(ChallengeData challengeData);
     ChallengeData resumeChallenge(ChallengeData challengeData);

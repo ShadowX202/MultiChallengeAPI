@@ -18,6 +18,11 @@ public interface ChallengeData {
     void addPlayer(Player player);
     void removePlayer(Player player);
 
+    void pause();
+    void resume();
+    void stop();
+    void start();
+
     Timer getTimer();
 
 }
