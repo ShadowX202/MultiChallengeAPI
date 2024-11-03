@@ -19,5 +19,4 @@ public interface ChallengeManager {
 
     List<ChallengeData> getActiveChallenges(Challenge challenge);
     ChallengeData getActiveChallenge(Player player);
-
 }
