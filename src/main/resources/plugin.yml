@@ -1,4 +1,0 @@
-name: MultiChallengeAPI
-version: '${project.version}'
-main: de.shadowx202.multichallengeapi.MultiChallengeAPI
-api-version: '1.21'
